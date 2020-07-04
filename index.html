@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AinfZ</title>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="resize.css">
+
+
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.js'></script>
+    
+</head>
+<body id="body">
+    <header id="header" class="scroll" data-scroll="1">
+        <section id="section_img">
+            <img id="header_img" src="" alt="">
+        </section>
+        <img class="nav_item_rwd" src="resize/bars-solid.svg" alt="">
+        <nav id="nav">
+            <ul id="nav_list">
+                <div class="move_background"></div>
+                <li class="nav_item">
+                    <a href="#header"  data-item="1">START</a>
+                </li>
+                <li class="nav_item">
+                    <a href="#section_lokalizacja" data-item="2">LOKALIZACJA</a>
+                </li>
+                <li class="nav_item">
+                    <a href="#section_uslugi" data-item="3">USŁUGI</a>
+                </li>
+                <li class="nav_item">
+                    <a href="#section_zespol" data-item="4">ZESPÓŁ</a>
+                </li>
+                <li class="nav_item">
+                    <a href="#section_o_nas" data-item="5">O NAS</a>
+                </li>
+                <li class="nav_item">
+                    <a href="#section_kontakt" data-item="6">KONTAKT</a>
+                </li>
+            </ul>
+        </nav>
+    </header>   
+    <main id="main">
+        <section id="section_lokalizacja" class="scroll" data-scroll="2">
+            <div id="scene2">
+                <img id="lokalizacja_img_background" src="" alt="" data-depth="0.2">
+            </div>
+            
+            <article  id="lokalizacja_info" >
+                <div class="lokalizacja_left">
+                    <div class="lokalizacja_h"><h1>LOKALIZACJA</h1></div>
+                    <div class="lokalizacja_p"><p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. <BR>
+                        Sed pretium lacus diam, in sodales nisi elementum at. <BR>
+                        Etiam commodo ante mi, a accumsan mauris placerat sit amet. <BR>
+                        Cras risus nisi, pretium a massa quis, ultricies rhoncus mi.<BR>
+                        Cras lobortis, massa et fringilla suscipit, <BR>
+                        est augue scelerisque lacus, quis iaculis ipsum massa eu dolor. <BR>
+                        Nullam nec magna id ante ullamcorper pellentesque quis eget lorem. <BR> 
+                    </p></div>
+                </div>
+                
+                <div id='map'></div>
+            </article>
+        </section>
+        <section id="section_uslugi" class="scroll" data-scroll="3">
+            <div class="box_before"></div>
+            <div id="scene">
+                <img id="section_usługi_background" src="" alt="" data-depth="0.2">
+            </div>
+            <div class="box_after"></div>
+            <article id="uslugi_info">
+                <div class="uslugi_h"><h1>USŁUGI</h1></div>
+                <table id="uslugi_table">
+                    <tr class="uslugi_item">
+                        <th class="item_th">
+                            <figure>
+                                <img class="uslugi_img" src="photo/file-code-solid.svg" alt="" style="height: 110px;">
+                                <figcaption>Projektownie stron internetowych</figcaption>
+                            </figure>
+                            <div class="file_info">
+                                <div class="background_blur"></div>
+                                <div class="file_window">
+                                    <img  class="button_exit" src="photo/window-close-regular.svg" alt="">
+                                    <div class="file_h"><h1>Projektowanie stron internetowych</h1></div>
+                                    <div class="file_p"><p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                        Phasellus mollis tortor at ornare eleifend. 
+                                        Aenean malesuada, diam nec sollicitudin ullamcorper, 
+                                        felis lorem dapibus erat, at condimentum neque justo ut lorem. 
+                                        Curabitur sodales nisi sit amet nisi semper, a lobortis quam convallis. 
+                                        Sed ultricies elementum risus sit amet tincidunt. Praesent et enim nibh. 
+                                        Duis eleifend vulputate augue vitae blandit. 
+                                        Donec convallis est ac tellus posuere, a vestibulum urna molestie.
+                                        <br>
+                                        <br>
+                                        <br>
+                                        Donec cursus leo eget mauris dapibus varius. 
+                                        Maecenas venenatis metus in condimentum dapibus. 
+                                        Cras pretium commodo velit non commodo. In laoreet, 
+                                        sem quis semper hendrerit, sapien lorem mollis magna, 
+                                        quis sagittis felis velit eget ex. 
+                                        Vestibulum at dolor sed ex maximus pulvinar et nec purus. 
+                                        Morbi vitae neque felis. Aliquam hendrerit erat eu euismod euismod. 
+                                        In luctus orci et dolor posuere iaculis. Nulla facilisi.
+                                        <br>
+                                        <br>
+                                        <br>
+                                        Etiam vitae purus ultricies, vestibulum sapien at, varius arcu. 
+                                        Etiam sed tellus eget ligula iaculis tempus. 
+                                        Donec eros ex, condimentum ut enim id, tempus lobortis purus. 
+                                        Sed at semper felis. Quisque mi ex, commodo nec rhoncus eu, lacinia sed libero. 
+                                        Morbi commodo dolor eget gravida ullamcorper. Fusce in eros quis sapien euismod ullamcorper. 
+                                        Integer iaculis interdum est. Vestibulum scelerisque, neque ut pulvinar efficitur, 
+                                        nisl orci fringilla justo, id feugiat urna diam ac felis. 
+                                        Curabitur dictum, nunc sit amet eleifend eleifend, nibh nisl facilisis elit, 
+                                        vel sollicitudin mauris sem et erat. Interdum et malesuada fames ac ante ipsum primis in faucibus. 
+                                        Quisque vehicula congue elit.
+                                    </p></div>
+                                    <div class="file_f">
+                                        <img src="photo/html5-brands.svg" alt="">
+                                        <img src="photo/css3-alt-brands.svg" alt="">
+                                        <img src="photo/js-brands.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </th>
+                        <th class="item_th">
+                            <figure>
+                                <img class="uslugi_img" src="photo/store-alt-solid.svg" alt="" style="height: 100px;">
+                                <figcaption>Tworzenie sklepów internetowych</figcaption>
+                            </figure>
+                            <div class="file_info">
+                                <div class="background_blur"></div>
+                                <div class="file_window">
+                                    <img  class="button_exit" src="photo/window-close-regular.svg" alt="">
+                                    <div class="file_h"><h1>Tworzenie sklepów internetowych</h1></div>
+                                    <div class="file_p"><p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                        Phasellus mollis tortor at ornare eleifend. 
+                                        Aenean malesuada, diam nec sollicitudin ullamcorper, 
+                                        felis lorem dapibus erat, at condimentum neque justo ut lorem. 
+                                        Curabitur sodales nisi sit amet nisi semper, a lobortis quam convallis. 
+                                        Sed ultricies elementum risus sit amet tincidunt. Praesent et enim nibh. 
+                                        Duis eleifend vulputate augue vitae blandit. 
+                                        Donec convallis est ac tellus posuere, a vestibulum urna molestie.
+                                        <br>
+                                        <br>
+                                        <br>
+                                        Donec cursus leo eget mauris dapibus varius. 
+                                        Maecenas venenatis metus in condimentum dapibus. 
+                                        Cras pretium commodo velit non commodo. In laoreet, 
+                                        sem quis semper hendrerit, sapien lorem mollis magna, 
+                                        quis sagittis felis velit eget ex. 
+                                        Vestibulum at dolor sed ex maximus pulvinar et nec purus. 
+                                        Morbi vitae neque felis. Aliquam hendrerit erat eu euismod euismod. 
+                                        In luctus orci et dolor posuere iaculis. Nulla facilisi.
+                                        <br>
+                                        <br>
+                                        <br>
+                                        Etiam vitae purus ultricies, vestibulum sapien at, varius arcu. 
+                                        Etiam sed tellus eget ligula iaculis tempus. 
+                                        Donec eros ex, condimentum ut enim id, tempus lobortis purus. 
+                                        Sed at semper felis. Quisque mi ex, commodo nec rhoncus eu, lacinia sed libero. 
+                                        Morbi commodo dolor eget gravida ullamcorper. Fusce in eros quis sapien euismod ullamcorper. 
+                                        Integer iaculis interdum est. Vestibulum scelerisque, neque ut pulvinar efficitur, 
+                                        nisl orci fringilla justo, id feugiat urna diam ac felis. 
+                                        Curabitur dictum, nunc sit amet eleifend eleifend, nibh nisl facilisis elit, 
+                                        vel sollicitudin mauris sem et erat. Interdum et malesuada fames ac ante ipsum primis in faucibus. 
+                                        Quisque vehicula congue elit.
+                                    </p></div>
+                                    <div class="file_f">
+                                        <img src="photo/html5-brands.svg" alt="">
+                                        <img src="photo/css3-alt-brands.svg" alt="">
+                                        <img src="photo/js-brands.svg" alt="">
+                                        <img src="photo/react-brands.svg" alt="">
+                                        <img src="photo/php-brands.svg" alt="">
+                                        <img src="photo/database-solid.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </th>
+                        <th class="item_th">
+                            <figure>
+                                <img class="uslugi_img" src="photo/google-plus-brands.svg" alt="" style="height: 80px;">
+                                <figcaption>Kampanie reklamowe Google</figcaption>
+                            </figure>
+                            <div class="file_info">
+                                <div class="background_blur"></div>
+                                <div class="file_window">
+                                    <img  class="button_exit" src="photo/window-close-regular.svg" alt="">
+                                    <div class="file_h"><h1>Kampanie reklamowe Google</h1></div>
+                                    <div class="file_p"><p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                        Phasellus mollis tortor at ornare eleifend. 
+                                        Aenean malesuada, diam nec sollicitudin ullamcorper, 
+                                        felis lorem dapibus erat, at condimentum neque justo ut lorem. 
+                                        Curabitur sodales nisi sit amet nisi semper, a lobortis quam convallis. 
+                                        Sed ultricies elementum risus sit amet tincidunt. Praesent et enim nibh. 
+                                        Duis eleifend vulputate augue vitae blandit. 
+                                        Donec convallis est ac tellus posuere, a vestibulum urna molestie.
+                                        <br>
+                                        <br>
+                                        <br>
+                                        Donec cursus leo eget mauris dapibus varius. 
+                                        Maecenas venenatis metus in condimentum dapibus. 
+                                        Cras pretium commodo velit non commodo. In laoreet, 
+                                        sem quis semper hendrerit, sapien lorem mollis magna, 
+                                        quis sagittis felis velit eget ex. 
+                                        Vestibulum at dolor sed ex maximus pulvinar et nec purus. 
+                                        Morbi vitae neque felis. Aliquam hendrerit erat eu euismod euismod. 
+                                        In luctus orci et dolor posuere iaculis. Nulla facilisi.
+                                        <br>
+                                        <br>
+                                        <br>
+                                        Etiam vitae purus ultricies, vestibulum sapien at, varius arcu. 
+                                        Etiam sed tellus eget ligula iaculis tempus. 
+                                        Donec eros ex, condimentum ut enim id, tempus lobortis purus. 
+                                        Sed at semper felis. Quisque mi ex, commodo nec rhoncus eu, lacinia sed libero. 
+                                        Morbi commodo dolor eget gravida ullamcorper. Fusce in eros quis sapien euismod ullamcorper. 
+                                        Integer iaculis interdum est. Vestibulum scelerisque, neque ut pulvinar efficitur, 
+                                        nisl orci fringilla justo, id feugiat urna diam ac felis. 
+                                        Curabitur dictum, nunc sit amet eleifend eleifend, nibh nisl facilisis elit, 
+                                        vel sollicitudin mauris sem et erat. Interdum et malesuada fames ac ante ipsum primis in faucibus. 
+                                        Quisque vehicula congue elit.
+                                    </p></div>
+                                    <div class="file_f">
+                                        <img src="photo/google-plus-brands-2.svg" alt="">
+                                        <img src="photo/aws-brands.svg" alt="">
+                                        <img src="photo/ad-solid.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </th>
+                    </tr>
+                    <tr class="uslugi_item" >
+                        <th class="item_th">
+                            <figure>
+                                <img class="uslugi_img" src="photo/edit-solid.svg" alt="" style="height: 100px;">
+                                <figcaption>Usługi Graficzne</figcaption>
+                            </figure>
+                            <div class="file_info">
+                                <div class="background_blur"></div>
+                                <div class="file_window">
+                                    <img  class="button_exit" src="photo/window-close-regular.svg" alt="">
+                                    <div class="file_h"><h1>Usługi Graficzne</h1></div>
+                                    <div class="file_p"><p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                        Phasellus mollis tortor at ornare eleifend. 
+                                        Aenean malesuada, diam nec sollicitudin ullamcorper, 
+                                        felis lorem dapibus erat, at condimentum neque justo ut lorem. 
+                                        Curabitur sodales nisi sit amet nisi semper, a lobortis quam convallis. 
+                                        Sed ultricies elementum risus sit amet tincidunt. Praesent et enim nibh. 
+                                        Duis eleifend vulputate augue vitae blandit. 
+                                        Donec convallis est ac tellus posuere, a vestibulum urna molestie.
+                                        <br>
+                                        <br>
+                                        <br>
+                                        Donec cursus leo eget mauris dapibus varius. 
+                                        Maecenas venenatis metus in condimentum dapibus. 
+                                        Cras pretium commodo velit non commodo. In laoreet, 
+                                        sem quis semper hendrerit, sapien lorem mollis magna, 
+                                        quis sagittis felis velit eget ex. 
+                                        Vestibulum at dolor sed ex maximus pulvinar et nec purus. 
+                                        Morbi vitae neque felis. Aliquam hendrerit erat eu euismod euismod. 
+                                        In luctus orci et dolor posuere iaculis. Nulla facilisi.
+                                        <br>
+                                        <br>
+                                        <br>
+                                        Etiam vitae purus ultricies, vestibulum sapien at, varius arcu. 
+                                        Etiam sed tellus eget ligula iaculis tempus. 
+                                        Donec eros ex, condimentum ut enim id, tempus lobortis purus. 
+                                        Sed at semper felis. Quisque mi ex, commodo nec rhoncus eu, lacinia sed libero. 
+                                        Morbi commodo dolor eget gravida ullamcorper. Fusce in eros quis sapien euismod ullamcorper. 
+                                        Integer iaculis interdum est. Vestibulum scelerisque, neque ut pulvinar efficitur, 
+                                        nisl orci fringilla justo, id feugiat urna diam ac felis. 
+                                        Curabitur dictum, nunc sit amet eleifend eleifend, nibh nisl facilisis elit, 
+                                        vel sollicitudin mauris sem et erat. Interdum et malesuada fames ac ante ipsum primis in faucibus. 
+                                        Quisque vehicula congue elit.
+                                    </p></div>
+                                    <div class="file_f">
+                                        <img src="photo/adobe-brands.svg" alt="">
+                                        <img src="photo/edit-solid-2.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </th>
+                        <th class="item_th">
+                            <figure>
+                                <img class="uslugi_img" src="photo/mobile-solid.svg" alt="" style="height: 115px;">
+                                <figcaption>Tworzenie aplikacji mobilnych</figcaption>
+                            </figure>
+                            <div class="file_info">
+                                <div class="background_blur"></div>
+                                <div class="file_window">
+                                    <img  class="button_exit" src="photo/window-close-regular.svg" alt="">
+                                    <div class="file_h"><h1>Tworzenie aplikacji mobilnych</h1></div>
+                                    <div class="file_p"><p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                        Phasellus mollis tortor at ornare eleifend. 
+                                        Aenean malesuada, diam nec sollicitudin ullamcorper, 
+                                        felis lorem dapibus erat, at condimentum neque justo ut lorem. 
+                                        Curabitur sodales nisi sit amet nisi semper, a lobortis quam convallis. 
+                                        Sed ultricies elementum risus sit amet tincidunt. Praesent et enim nibh. 
+                                        Duis eleifend vulputate augue vitae blandit. 
+                                        Donec convallis est ac tellus posuere, a vestibulum urna molestie.
+                                        <br>
+                                        <br>
+                                        <br>
+                                        Donec cursus leo eget mauris dapibus varius. 
+                                        Maecenas venenatis metus in condimentum dapibus. 
+                                        Cras pretium commodo velit non commodo. In laoreet, 
+                                        sem quis semper hendrerit, sapien lorem mollis magna, 
+                                        quis sagittis felis velit eget ex. 
+                                        Vestibulum at dolor sed ex maximus pulvinar et nec purus. 
+                                        Morbi vitae neque felis. Aliquam hendrerit erat eu euismod euismod. 
+                                        In luctus orci et dolor posuere iaculis. Nulla facilisi.
+                                        <br>
+                                        <br>
+                                        <br>
+                                        Etiam vitae purus ultricies, vestibulum sapien at, varius arcu. 
+                                        Etiam sed tellus eget ligula iaculis tempus. 
+                                        Donec eros ex, condimentum ut enim id, tempus lobortis purus. 
+                                        Sed at semper felis. Quisque mi ex, commodo nec rhoncus eu, lacinia sed libero. 
+                                        Morbi commodo dolor eget gravida ullamcorper. Fusce in eros quis sapien euismod ullamcorper. 
+                                        Integer iaculis interdum est. Vestibulum scelerisque, neque ut pulvinar efficitur, 
+                                        nisl orci fringilla justo, id feugiat urna diam ac felis. 
+                                        Curabitur dictum, nunc sit amet eleifend eleifend, nibh nisl facilisis elit, 
+                                        vel sollicitudin mauris sem et erat. Interdum et malesuada fames ac ante ipsum primis in faucibus. 
+                                        Quisque vehicula congue elit.
+                                    </p></div>
+                                    <div class="file_f">
+                                        <img src="photo/mobile-solid-2.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </th>
+                        <th class="item_th">
+                            <figure>
+                                <img class="uslugi_img" src="photo/cloud-upload-alt-solid.svg" alt="" style="height: 120px;">
+                                <figcaption>Hosting Stron Internetowych</figcaption>
+                            </figure>
+                            <div class="file_info">
+                                <div class="background_blur"></div>
+                                <div class="file_window">
+                                    <img  class="button_exit" src="photo/window-close-regular.svg" alt="">
+                                    <div class="file_h"><h1>Hosting Stron Internetowych</h1></div>
+                                    <div class="file_p"><p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                        Phasellus mollis tortor at ornare eleifend. 
+                                        Aenean malesuada, diam nec sollicitudin ullamcorper, 
+                                        felis lorem dapibus erat, at condimentum neque justo ut lorem. 
+                                        Curabitur sodales nisi sit amet nisi semper, a lobortis quam convallis. 
+                                        Sed ultricies elementum risus sit amet tincidunt. Praesent et enim nibh. 
+                                        Duis eleifend vulputate augue vitae blandit. 
+                                        Donec convallis est ac tellus posuere, a vestibulum urna molestie.
+                                        <br>
+                                        <br>
+                                        <br>
+                                        Donec cursus leo eget mauris dapibus varius. 
+                                        Maecenas venenatis metus in condimentum dapibus. 
+                                        Cras pretium commodo velit non commodo. In laoreet, 
+                                        sem quis semper hendrerit, sapien lorem mollis magna, 
+                                        quis sagittis felis velit eget ex. 
+                                        Vestibulum at dolor sed ex maximus pulvinar et nec purus. 
+                                        Morbi vitae neque felis. Aliquam hendrerit erat eu euismod euismod. 
+                                        In luctus orci et dolor posuere iaculis. Nulla facilisi.
+                                        <br>
+                                        <br>
+                                        <br>
+                                        Etiam vitae purus ultricies, vestibulum sapien at, varius arcu. 
+                                        Etiam sed tellus eget ligula iaculis tempus. 
+                                        Donec eros ex, condimentum ut enim id, tempus lobortis purus. 
+                                        Sed at semper felis. Quisque mi ex, commodo nec rhoncus eu, lacinia sed libero. 
+                                        Morbi commodo dolor eget gravida ullamcorper. Fusce in eros quis sapien euismod ullamcorper. 
+                                        Integer iaculis interdum est. Vestibulum scelerisque, neque ut pulvinar efficitur, 
+                                        nisl orci fringilla justo, id feugiat urna diam ac felis. 
+                                        Curabitur dictum, nunc sit amet eleifend eleifend, nibh nisl facilisis elit, 
+                                        vel sollicitudin mauris sem et erat. Interdum et malesuada fames ac ante ipsum primis in faucibus. 
+                                        Quisque vehicula congue elit.
+                                    </p></div>
+                                    <div class="file_f">
+                                        <img src="photo/aws-brands.svg" alt="">
+                                        <img src="photo/database-solid.svg" alt="">
+                                        <img src="photo/cloud-upload-alt-solid (2).svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </th>
+                    </tr>
+                </table>
+            </article>
+        </section>
+        <section id="section_zespol" class="scroll" data-scroll="4">
+            <img id="zespol_img_background" src="photo/zespół.png" alt="" >
+            <div id="zespol_h" ><h1>ZESPÓŁ</h1></div>
+            <img id="zespol_b_l" src="photo/chevron-left-solid.svg" ></img>
+            <img id="zespol_b_r" src="photo/chevron-right-solid.svg" ></img>
+            <div class="zespol_osoba_conteiner">
+                <img id="zespol_osoba" src="photo/user_1.svg" alt="" >
+            </div>
+            
+        </section>
+        <section id="section_o_nas" class="scroll" data-scroll="5">
+            <div id="section_o_nas_img">
+                <img class="o_nas_gora" src="" alt="">
+                <img class="o_nas_lewa" src="" alt="">
+                <img class="o_nas_prawa" src="" alt="">
+            </div>
+            <div id="o_nas_h"><h1>Czy się wyróżniamy</h1></div>
+            <article id="o_nas_info">
+                <div class="o_nas_j">
+                    <ul class="o_nas_item" >
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et suscipit quam. Cras nibh felis, euismod vel lectus vel, dapibus aliquet ante. Nulla dignissim, lectus sed cursus facilisis, mi metus elementum mi, quis varius nisi ex sed felis. Aenean interdum, enim vitae euismod venenatis, nisl dui porttitor arcu, quis pellentesque orci quam ac lacus.</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et suscipit quam. Cras nibh felis, euismod vel lectus vel, dapibus aliquet ante. Nulla dignissim, lectus sed cursus facilisis, mi metus elementum mi, quis varius nisi ex sed felis. Aenean interdum, enim vitae euismod venenatis, nisl dui porttitor arcu, quis pellentesque orci quam ac lacus.</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et suscipit quam. Cras nibh felis, euismod vel lectus vel, dapibus aliquet ante. Nulla dignissim, lectus sed cursus facilisis, mi metus elementum mi, quis varius nisi ex sed felis. Aenean interdum, enim vitae euismod venenatis, nisl dui porttitor arcu, quis pellentesque orci quam ac lacus.</li>
+                    </ul>
+                </div>
+                    
+
+                <div class="o_nas_d">
+                    <ul class="o_nas_item" >
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et suscipit quam. Cras nibh felis, euismod vel lectus vel, dapibus aliquet ante. Nulla dignissim, lectus sed cursus facilisis, mi metus elementum mi, quis varius nisi ex sed felis. Aenean interdum, enim vitae euismod venenatis, nisl dui porttitor arcu, quis pellentesque orci quam ac lacus.</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et suscipit quam. Cras nibh felis, euismod vel lectus vel, dapibus aliquet ante. Nulla dignissim, lectus sed cursus facilisis, mi metus elementum mi, quis varius nisi ex sed felis. Aenean interdum, enim vitae euismod venenatis, nisl dui porttitor arcu, quis pellentesque orci quam ac lacus.</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et suscipit quam. Cras nibh felis, euismod vel lectus vel, dapibus aliquet ante. Nulla dignissim, lectus sed cursus facilisis, mi metus elementum mi, quis varius nisi ex sed felis. Aenean interdum, enim vitae euismod venenatis, nisl dui porttitor arcu, quis pellentesque orci quam ac lacus.</li>
+                    </ul>
+                </div>
+                    
+
+                
+            </article>
+        </section>
+        <section id="section_kontakt" class="scroll" data-scroll="6">
+            <img id="kontakt_img" src="" alt="">
+            <article id="kontakt_media">
+                <div class="kontakt_h"><h1>KONTAKT</h1></div>
+                <div class="media">
+                    <div id="fb">
+                        <img id="fb_img" src="photo/facebook-brands.svg" alt="">
+                        <span><p>Facebook</p></span>
+                    </div>
+                    <div id="ig">
+                        <img id="ig_img" src="photo/instagram-brands.svg" alt="">
+                        <span><p>Instagram</p></span>
+                    </div>
+                    <div id="tt">
+                        <img id="tt_img" src="photo/twitter-brands.svg" alt="">
+                        <span><p>Twitter</p></span>
+                    </div>
+                    <div id="in">
+                        <img id="in_img" src="photo/linkedin-in-brands.svg" alt="">
+                        <span><p>Linkedin</p></span>
+                    </div>
+                </div>
+
+            </article>
+            
+        </section> 
+        <div class="bottom_black" style="position: absolute; bottom: 0;left: 0;width: 100vw; height: 100px; background-color: black;"></div>
+    </main>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
+    <script src="script.js"></script>
+    <script src="resize.js"></script>
+</body>
+</html>
