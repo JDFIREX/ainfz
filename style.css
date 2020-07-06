@@ -41,6 +41,7 @@ html{
   width: 100vw;
   display: flex;
   justify-content: center;
+  scroll-behavior: smooth;
 }
 
 body{
@@ -188,7 +189,7 @@ main #section_lokalizacja #lokalizacja_info #map{
     right: 30px;
     width: 35%;
     height: 500px;
-    z-index: 30000;
+    z-index: 0;
 }
 
 
@@ -384,15 +385,17 @@ main #section_zespol #zespol_h{
 }
 main #section_zespol #zespol_b_l{
   position: absolute;
-  top: 50px;
+  top: 550px;
   left: 300px;
   width: 100px;
+  transform: scale(1.2);
 }
 main #section_zespol #zespol_b_r{
   position: absolute;
-  top: 50px;
+  top: 550px;
   right: 300px;
   width: 100px;
+  transform: scale(1.2);
 }
 main #section_zespol .zespol_osoba_conteiner{
   position: absolute;

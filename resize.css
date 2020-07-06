@@ -72,12 +72,14 @@ margin-right: 55vw;
     top: 2.0833vw;
   }
   main #section_zespol #zespol_b_l{
-    top: 26.0416vw;
+    top: 28.0416vw;
     left: 15.2291vw;
+    transform: scale(1.5);
   }
   main #section_zespol #zespol_b_r{
-    top: 26.0416vw;
+    top: 28.0416vw;
     right: 15.2291vw;
+    transform: scale(1.5);
   }
   main #section_zespol .zespol_osoba_conteiner{
     top: 10.4166vw;
@@ -220,7 +222,12 @@ margin-right: 55vw;
       background-color: #28243B;
     }
 
-
+    main #section_zespol #zespol_b_l{
+      transform: scale(1);
+    }
+    main #section_zespol #zespol_b_r{
+      transform: scale(1);
+    }
 
     main #section_kontakt{
       position: relative;
@@ -723,9 +730,11 @@ margin-right: 55vw;
     }
     main #section_zespol #zespol_b_l{
       z-index: 2;
+      transform: scale(0.9);
     }
     main #section_zespol #zespol_b_r{
       z-index: 2;
+      transform: scale(0.9);
     }
 
     main #section_o_nas #o_nas_info .o_nas_j{
