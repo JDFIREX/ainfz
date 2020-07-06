@@ -364,27 +364,27 @@ function changeImg(FirstLeft, SecondLeft, ThirdLeft, bside, count){
 
 
 //o nas tekst schodzący wraz z scrollem 
-// ScrollReveal({ 
-//     reset: true,
-//     easing: 'cubic-bezier(0.5, 0, 0, 1)',
-//     origin: 'left',
-//     interval: 3500,
-//     delay: 500 
-// }).reveal('.o_nas_j');
-// ScrollReveal({ 
-//     reset: true,
-//     easing: 'cubic-bezier(0.5, 0, 0, 1)',
-//     origin: 'left',
-//     interval: 3500,
-//     delay: 500 
-// }).reveal('.o_nas_d');
-// ScrollReveal({ 
-//     reset: true,
-//     easing: 'cubic-bezier(0.5, 0, 0, 1)',
-//     origin: 'left',
-//     interval: 3500,
-//     delay: 200 
-// }).reveal('#o_nas_h');
+ScrollReveal({ 
+    reset: true,
+    easing: 'cubic-bezier(0.5, 0, 0, 1)',
+    origin: 'left',
+    interval: 3500,
+    delay: 500 
+}).reveal('.o_nas_j');
+ScrollReveal({ 
+    reset: true,
+    easing: 'cubic-bezier(0.5, 0, 0, 1)',
+    origin: 'left',
+    interval: 3500,
+    delay: 500 
+}).reveal('.o_nas_d');
+ScrollReveal({ 
+    reset: true,
+    easing: 'cubic-bezier(0.5, 0, 0, 1)',
+    origin: 'left',
+    interval: 3500,
+    delay: 200 
+}).reveal('#o_nas_h');
 
 
 
