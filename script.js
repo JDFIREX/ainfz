@@ -364,9 +364,9 @@ function changeImg(FirstLeft, SecondLeft, ThirdLeft, bside, count){
 
 
 //o nas tekst schodzący wraz z scrollem 
-ScrollReveal({ 
-    reset: true,
-}).reveal('.o_nas_item');
+// ScrollReveal({ 
+//     reset: true,
+// }).reveal('.o_nas_item');
 // ScrollReveal({ 
 //     reset: true,
 //     easing: 'cubic-bezier(0.5, 0, 0, 1)',
